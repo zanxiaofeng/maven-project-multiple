@@ -16,7 +16,8 @@ public class Application {
     private static void schedule() {
         try {
             System.out.println(String.format("Running in %s printed by %s", Thread.currentThread().getName(), "java"));
-            CLibrary.INSTANCE.printf("Running in %s printed by %s", Thread.currentThread().getName(), Platform.C_LIBRARY_NAME);
+            MyHelloLibrary.getInstance().hello("davis");
+            CLibrary.getInstance().printf("Running in %s printed by %s", Thread.currentThread().getName(), Platform.C_LIBRARY_NAME);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
