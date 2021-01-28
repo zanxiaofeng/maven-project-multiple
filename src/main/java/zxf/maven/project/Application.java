@@ -17,7 +17,7 @@ public class Application {
         try {
             System.out.println(String.format("Running in %s printed by %s", Thread.currentThread().getName(), "java"));
             MyHelloLibrary.getInstance().hello("davis");
-            CLibrary.getInstance().printf("Running in %s printed by %s", Thread.currentThread().getName(), Platform.C_LIBRARY_NAME);
+            CLibrary.getInstance().printf("Running in %s printed by %s\n", Thread.currentThread().getName(), Platform.C_LIBRARY_NAME);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
