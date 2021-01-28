@@ -9,4 +9,3 @@ public interface CLibrary extends Library {
 
     void printf(String format, Object... args);
 }
-git
