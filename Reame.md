@@ -3,4 +3,4 @@
     2. Change the appropriate library access environment variable before launching the VM. This is PATH on Windows, LD_LIBRARY_PATH on Linux, and DYLD_LIBRARY_PATH on OSX.
     3. Make your native library available on your classpath, under the path {OS}-{ARCH}/{LIBRARY}, where {OS}-{ARCH} is JNA's canonical prefix for native libraries (e.g. win32-x86, linux-amd64, or darwin). If the resource is within a jar file it will be automatically extracted when loaded.
 #run on MAC OSX:
-    java -Djna.library.path="`pwd`/src/main/c" -jar target/maven-project-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+    java -Djna.library.path="`pwd`/src/main/c" -jar target/zxf-java-jna-0.0.1-SNAPSHOT-jar-with-dependencies.jar

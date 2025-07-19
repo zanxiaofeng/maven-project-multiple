@@ -1,4 +1,4 @@
-package zxf.maven.project;
+package zxf.jna;
 
 import com.sun.jna.Platform;
 

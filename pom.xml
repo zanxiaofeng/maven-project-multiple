@@ -4,12 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>zxf</groupId>
-    <artifactId>maven-project</artifactId>
+    <artifactId>zxf-java-jna</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -33,7 +29,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>zxf.maven.project.Application</mainClass>
+                            <mainClass>zxf.jna.Application</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -49,14 +45,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
